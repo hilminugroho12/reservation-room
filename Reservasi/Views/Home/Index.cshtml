@@ -1,0 +1,30 @@
+﻿@model Reservasi.Models.ReservasiViewModel
+@{
+    ViewBag.Title = "Reservasi Ruangan";
+}
+
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Ruangan</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Tanggal</th>
+                <th scope="col">Jam Mulai</th>
+                <th scope="col">Jam Selesai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Ruangan_FK</td>
+                <td>@Model.SubjectReservasi</td>
+                <td>@Model.TanggalReservasi</td>
+                <td>@Model.JamMulai</td>
+                <td>@Model.JamSelesai</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="~/Home/About" class="btn btn-primary">Tambah</a>
+}

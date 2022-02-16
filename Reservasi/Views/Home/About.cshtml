@@ -1,0 +1,31 @@
+﻿@model Reservasi.Models.ReservasiViewModel
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Ruangan</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>@Model.Ruangan_FK</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Subject Reservasi</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject Reservasi">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Tanggal reservasi</label>
+        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Tanggal Reservasi">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Jam Mulai</label>
+        <input type="time" class="form-control" id="exampleFormControlInput1" placeholder="Jam Mulai">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Jam Selesai</label>
+        <input type="time" class="form-control" id="exampleFormControlInput1" placeholder="Jam Selesai">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
